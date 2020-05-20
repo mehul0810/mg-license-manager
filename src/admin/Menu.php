@@ -80,7 +80,7 @@ class Menu {
 					<?php
 					if ( is_array( $plugins ) && count( $plugins ) > 0 ) {
 						foreach ( $plugins as $slug => $data ) {
-							$licenseKeySlug  = Helpers::getLicenseKeySlug( $slug );
+							$licenseKeySlug  = Helpers::getLicenseKeySlug( $data['ItemName'] );
 							$licenseKey      = get_option( $licenseKeySlug );
 							$isLicenseActive = ! empty( $licenseKey );
 							?>
@@ -94,8 +94,8 @@ class Menu {
 											class="mg-full-width mg-license-text-input"
 											type="text"
 											name="licenseKey"
-											data-name="<?php echo $data['ProductTitle']; ?>"
-											data-slug="<?php echo $slug; ?>"
+											data-name="<?php echo $data['ItemName']; ?>"
+											data-slug="<?php echo $data['ItemSlug']; ?>"
 										/>
 										<input disabled class="mg-activate-license-btn mg-full-width button button-primary" type="button" value="<?php esc_html_e( 'Activate License', 'mg-licenses' ); ?>"/>
 										<input class="mg-deactivate-license-btn mg-full-width button button-primary mg-hidden" type="button" value="<?php esc_html_e( 'Deactivate License', 'mg-licenses' ); ?>"/>

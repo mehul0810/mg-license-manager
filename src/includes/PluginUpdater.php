@@ -1,7 +1,9 @@
 <?php
 namespace MG\LicenseManager\Includes;
 
-// Exit if accessed directly
+use stdClass;
+
+// Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
@@ -10,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @author Easy Digital Downloads
  * @version 1.6.19
  */
-class Plugin_Updater {
+class PluginUpdater {
 
 	private $api_url     = '';
 	private $api_data    = array();

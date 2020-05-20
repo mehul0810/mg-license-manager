@@ -4,7 +4,7 @@ namespace MG\LicenseManager;
 use MG\LicenseManager\Admin\LicenseManager;
 use MG\LicenseManager\Admin\Menu;
 use MG\LicenseManager\Includes\Helpers;
-use MG\LicenseManager\Includes\Plugin_Updater;
+use MG\LicenseManager\Includes\PluginUpdater;
 
 // Bailout, if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -58,14 +58,15 @@ final class Plugin {
 
 		if ( is_array( $plugins ) && count( $plugins ) > 0 ) {
 			foreach ( $plugins as $slug => $data ) {
-				$licenseKeySlug  = Helpers::getLicenseKeySlug( $slug );
+				$licenseKeySlug  = Helpers::getLicenseKeySlug( $data['ItemName'] );
 				$licenseKey      = get_option( $licenseKeySlug );
-				$pluginPath      = "{$data['Slug']}/{$data['Slug']}.php";
+				$pluginPath      = $data['Path'];
 
-				new Plugin_Updater( 'https://mehulgohil.com', $pluginPath, [
+				// Call PluginUpdater Class to ensure that automatic updates are working.
+				new PluginUpdater( 'https://mehulgohil.com', $pluginPath, [
 					'version'   => $data['Version'],
 					'license'   => $licenseKey,
-					'item_name' => $data['ProductTitle'],
+					'item_name' => $data['ItemName'],
 					'author'    => 'Mehul Gohil',
 					'url'       => home_url(),
 					'beta'      => false

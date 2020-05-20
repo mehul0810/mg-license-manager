@@ -1,7 +1,28 @@
 <?php
 namespace MG\LicenseManager\Includes;
 
+// Bailout, if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Trait Helpers
+ *
+ * @package MG\LicenseManager\Includes
+ *
+ * @since 1.0.0
+ */
 trait Helpers {
+
+	/**
+	 * Get All Supported Plugins List.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 *
+	 * @return array
+	 */
 	public static function getAllSupportedPlugins() {
 		$plugins             = get_plugins();
 		$mg_plugins          = [];
@@ -52,6 +73,16 @@ trait Helpers {
 		return $mg_plugins;
 	}
 
+	/**
+	 * Get License Key Slug.
+	 *
+	 * @param string $slug Unique Plugin Slug.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 *
+	 * @return string
+	 */
 	public static function getLicenseKeySlug( $slug ) {
 		return "mg_license_manager_license_key_{$slug}";
 	}
