@@ -1,0 +1,72 @@
+.mg-hidden {
+  display: none !important;
+}
+
+.mg-full-width {
+  width: 100%;
+}
+
+.mg-license-text-input {
+  font-size: 22px;
+  height: 40px;
+  padding: 0 15px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+.mg-license-manager-wrap {
+  display: flex;
+
+  .mg-license-manager-inner {
+	flex: 2;
+
+	.mg-license-heading {
+	  display: block;
+	  font-size: 15px;
+	  margin: 0 0 20px;
+	  font-weight: bold;
+	  color: #23282d;
+	}
+
+	.mg-licenses-plugin-row {
+	  border: 1px solid #DBDBDB;
+	  background: #f4f4f4;
+	  margin-bottom: 15px;
+
+	  .mg-license-plugin-header {
+		display: flex;
+		border-bottom: 1px solid #DBDBDB;
+
+		.mg-license-plugin-header-column {
+		  flex: 1.45;
+		  padding: 20px;
+		  border-right: 1px solid #DBDBDB;
+
+		  &:last-child {
+			border-right: 0;
+			flex: 0.75;
+		  }
+		}
+	  }
+
+	  .mg-license-plugin-footer {
+		display: flex;
+		padding: 20px 20px 0px 20px;
+		background: #FFF;
+		vertical-align: middle;
+
+		.mg-license-plugin-footer-left {
+		  display: flex;
+
+		  .mg-license-version {
+			margin: 0 10px;
+		  }
+		}
+	  }
+	}
+  }
+
+  .mg-license-manager-upsells {
+	flex: 0.75;
+  }
+}

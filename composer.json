@@ -1,0 +1,15 @@
+{
+    "name": "mehulgohil/mg-licenses",
+    "authors": [
+        {
+            "name": "Mehul Gohil",
+            "email": "hello@mehulgohil.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MG\\LicenseManager\\": "src/"
+        }
+    }
+}
