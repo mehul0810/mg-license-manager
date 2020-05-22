@@ -1,5 +1,5 @@
 {
-  "name": "mg-licenses",
+  "name": "mg-license-manager",
   "version": "1.0.0",
   "description": "This plugin will help update all the premium plugins developed by Mehul Gohil.",
   "main": "index.js",
