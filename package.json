@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehul0810/mg-licenses.git"
+    "url": "git+https://github.com/mehul0810/mg-license-manager.git"
   },
   "author": "Mehul Gohil",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mehul0810/mg-licenses/issues"
+    "url": "https://github.com/mehul0810/mg-license-manager/issues"
   },
-  "homepage": "https://github.com/mehul0810/mg-licenses#readme",
+  "homepage": "https://github.com/mehul0810/mg-license-manager#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
     "babel-core": "^6.26.0",
