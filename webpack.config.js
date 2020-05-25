@@ -87,12 +87,12 @@ if ( inProduction ) {
 
     // POT file.
     wpPot( {
-        package: 'MG - Licenses',
+        package: 'MG - License Manager',
         domain: 'mg-license-manager',
-        destFile: 'languages/mg-licenses.pot',
+        destFile: 'languages/mg-license-manager.pot',
         relativeTo: './',
         src: [ './**/*.php', '!./vendor/**/*' ],
-        bugReport: 'https://github.com/mehul0810/mg-licenses/issues/new',
+        bugReport: 'https://github.com/mehul0810/mg-license-manager/issues/new',
         team: 'Mehul Gohil <hello@mehulgohil.com>',
     } );
 }
