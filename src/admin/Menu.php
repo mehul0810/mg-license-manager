@@ -195,7 +195,7 @@ class Menu {
 											<?php
 										} else if ( $isLicenseDeactivated ) {
 											?>
-											<div class="mg-license-badge mg-license-grey">
+											<div class="mg-license-badge mg-license-red">
 												<?php esc_html_e( 'Deactivated', 'mg-license-manager' ); ?>
 											</div>
 											<?php
