@@ -86,4 +86,18 @@ trait Helpers {
 	public static function getLicenseKeySlug( $slug ) {
 		return "mg_license_manager_license_key_{$slug}";
 	}
+
+	/**
+	 * Get License Information.
+	 *
+	 * @param string $slug Plugin Slug.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 *
+	 * @return array
+	 */
+	public static function getLicenseInformation( $slug ) {
+		return get_option( "mg_license_manager_license_information_{$slug}", [] );
+	}
 }
