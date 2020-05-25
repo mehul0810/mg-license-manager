@@ -52,8 +52,7 @@ class Menu {
 	 * @return void
 	 */
 	public function registerMenu() {
-		add_submenu_page(
-			'edit.php?post_type=give_forms',
+		add_options_page(
 			esc_html__( 'MG - Licenses', 'mg-license-manager' ),
 			esc_html__( 'MG - Licenses', 'mg-license-manager' ),
 			'manage_options',
