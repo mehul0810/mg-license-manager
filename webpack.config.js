@@ -88,7 +88,7 @@ if ( inProduction ) {
     // POT file.
     wpPot( {
         package: 'MG - Licenses',
-        domain: 'mg-licenses',
+        domain: 'mg-license-manager',
         destFile: 'languages/mg-licenses.pot',
         relativeTo: './',
         src: [ './**/*.php', '!./vendor/**/*' ],

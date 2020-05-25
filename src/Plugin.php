@@ -58,7 +58,7 @@ final class Plugin {
 
 		if ( is_array( $plugins ) && count( $plugins ) > 0 ) {
 			foreach ( $plugins as $slug => $data ) {
-				$licenseKeySlug  = Helpers::getLicenseKeySlug( $data['ItemName'] );
+				$licenseKeySlug  = Helpers::getLicenseKeySlug( $data['ItemSlug'] );
 				$licenseKey      = get_option( $licenseKeySlug );
 				$pluginPath      = $data['Path'];
 
