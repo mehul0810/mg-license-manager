@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Define plugin version in SemVer format.
 if ( ! defined( 'MG_LICENSE_MANAGER_VERSION' ) ) {
-	define( 'MG_LICENSE_MANAGER_VERSION', '1.0.0' );
+	define( 'MG_LICENSE_MANAGER_VERSION', '1.0.1' );
 }
 
 // Define plugin root File.

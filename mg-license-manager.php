@@ -12,7 +12,7 @@
  * Plugin Name:       MG - License Manager
  * Plugin URI:        https://mehulgohil.com/plugins/mg-license-manager/
  * Description:       This WordPress plugin will help you manage licenses and automatic updates for the premium plugins developed by Mehul Gohil.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 4.8
  * Requires PHP:      5.6
  * Author:            Mehul Gohil
