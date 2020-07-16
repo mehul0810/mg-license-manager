@@ -2,6 +2,7 @@
 namespace MG\LicenseManager;
 
 use MG\LicenseManager\Admin\LicenseManager;
+use MG\LicenseManager\Admin;
 use MG\LicenseManager\Admin\Menu;
 use MG\LicenseManager\Includes\Helpers;
 use MG\LicenseManager\Includes\PluginUpdater;
@@ -47,13 +48,16 @@ final class Plugin {
 	 * @return void
 	 */
 	public function register_services() {
-
 		// Load Admin Menu.
 		new Menu();
 
 		// Load License Manager.
 		new LicenseManager();
 
+		add_action( 'after_setup_theme', [ $this, 'checkForUpdates' ] );
+	}
+
+	public function checkForUpdates() {
 		$plugins = Helpers::getAllSupportedPlugins();
 
 		if ( is_array( $plugins ) && count( $plugins ) > 0 ) {

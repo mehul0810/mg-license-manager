@@ -1,6 +1,8 @@
 <?php
 namespace MG\LicenseManager\Includes;
 
+use function get_plugins;
+
 // Bailout, if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
