@@ -15,78 +15,78 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/admin/Menu.php:56, src/admin/Menu.php:57
+#: src/Admin/Menu.php:56, src/Admin/Menu.php:57
 msgid "MG - Licenses"
 msgstr ""
 
-#: src/admin/Menu.php:76
+#: src/Admin/Menu.php:76
 msgid "MG - License Manager"
 msgstr ""
 
-#: src/admin/Menu.php:97
+#: src/Admin/Menu.php:97
 msgid "activations remaining"
 msgstr ""
 
-#: src/admin/Menu.php:99
+#: src/Admin/Menu.php:99
 msgid "No activations remaining"
 msgstr ""
 
-#: src/admin/Menu.php:105
+#: src/Admin/Menu.php:105
 msgid "License Key"
 msgstr ""
 
-#: src/admin/Menu.php:116
+#: src/Admin/Menu.php:116
 msgid "Activate License"
 msgstr ""
 
-#: src/admin/Menu.php:117
+#: src/Admin/Menu.php:117
 msgid "Deactivate License"
 msgstr ""
 
-#: src/admin/Menu.php:121
+#: src/Admin/Menu.php:121
 msgid "Please activate your license key."
 msgstr ""
 
-#: src/admin/Menu.php:125
+#: src/Admin/Menu.php:125
 msgid "You are receiving updates and support."
 msgstr ""
 
-#: src/admin/Menu.php:132
+#: src/Admin/Menu.php:132
 msgid "License Information"
 msgstr ""
 
-#: src/admin/Menu.php:138
+#: src/Admin/Menu.php:138
 msgid "No License Information exists. Please activate license to display license information."
 msgstr ""
 
-#: src/admin/Menu.php:148
+#: src/Admin/Menu.php:148
 msgid "Renews:"
 msgstr ""
 
-#: src/admin/Menu.php:158
+#: src/Admin/Menu.php:158
 msgid "License Actions"
 msgstr ""
 
-#: src/admin/Menu.php:161, src/admin/Menu.php:162
+#: src/Admin/Menu.php:161, src/Admin/Menu.php:162
 msgid "Manage License"
 msgstr ""
 
-#: src/admin/Menu.php:166, src/admin/Menu.php:167
+#: src/Admin/Menu.php:166, src/Admin/Menu.php:167
 msgid "Access Support"
 msgstr ""
 
-#: src/admin/Menu.php:181
+#: src/Admin/Menu.php:181
 msgid "Version"
 msgstr ""
 
-#: src/admin/Menu.php:192
+#: src/Admin/Menu.php:192
 msgid "Activated"
 msgstr ""
 
-#: src/admin/Menu.php:198
+#: src/Admin/Menu.php:198
 msgid "Deactivated"
 msgstr ""
 
-#: src/admin/Menu.php:204
+#: src/Admin/Menu.php:204
 msgid "Installed"
 msgstr ""
