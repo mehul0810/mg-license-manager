@@ -55,6 +55,36 @@ final class Plugin {
 		new LicenseManager();
 
 		add_action( 'after_setup_theme', [ $this, 'checkForUpdates' ] );
+		add_filter( 'plugin_action_links_' . MG_LICENSE_MANAGER_PLUGIN_BASENAME, [ $this, 'pluginActionLinks' ] );
+	}
+
+	/**
+	 * This function is used to add settings page link on plugins page.
+	 *
+	 * @param array $links List of links on plugin page.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 *
+	 * @return array
+	 */
+	public function pluginActionLinks( $links ) {
+
+		$links['manage_licenses'] = sprintf(
+			'<a href="%1$s">%2$s</a>',
+			esc_url_raw( admin_url( 'options-general.php?page=mg_license_manager' ) ),
+			esc_html__( 'Manage Licenses', 'mg-mastercard-for-give' )
+		);
+
+		$links['donate'] = sprintf(
+			'<a target="_blank" href="%1$s">%2$s</a>',
+			esc_url_raw( 'https://mehulgohil.com/donations/buy-me-a-cup-of-coffee/' ),
+			esc_html__( 'Donate', 'mg-mastercard-for-give' )
+		);
+
+		asort( $links );
+
+		return $links;
 	}
 
 	public function checkForUpdates() {
